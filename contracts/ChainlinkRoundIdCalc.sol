@@ -1,63 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 
-interface AggregatorInterface {
-  function latestAnswer() external view returns (int256);
-  function latestTimestamp() external view returns (uint256);
-  function latestRound() external view returns (uint256);
-  function getAnswer(uint256 roundId) external view returns (int256);
-  function getTimestamp(uint256 roundId) external view returns (uint256);
+import "./AggregatorProxy.sol";
 
-  event AnswerUpdated(int256 indexed current, uint256 indexed roundId, uint256 updatedAt);
-  event NewRound(uint256 indexed roundId, address indexed startedBy, uint256 startedAt);
-}
-
-interface AggregatorV3Interface {
-
-  function decimals() external view returns (uint8);
-  function description() external view returns (string memory);
-  function version() external view returns (uint256);
-
-  // getRoundData and latestRoundData should both raise "No data present"
-  // if they do not have data to report, instead of returning unset values
-  // which could be misinterpreted as actual reported values.
-  function getRoundData(uint80 _roundId)
-    external
-    view
-    returns (
-      uint80 roundId,
-      int256 answer,
-      uint256 startedAt,
-      uint256 updatedAt,
-      uint80 answeredInRound
-    );
-  function latestRoundData()
-    external
-    view
-    returns (
-      uint80 roundId,
-      int256 answer,
-      uint256 startedAt,
-      uint256 updatedAt,
-      uint80 answeredInRound
-    );
-
-}
-
-interface AggregatorV2V3Interface is AggregatorInterface, AggregatorV3Interface
-{
-  function latestRound() external view returns (uint256);
-}
-
-
-interface AggregatorProxy {
-    function phaseId() external view returns (uint16);
-    function phaseAggregators(uint16 phaseId) external view returns (AggregatorV2V3Interface);
-}
-
-contract ChainlinkRoundIdCalc {
+library ChainlinkRoundIdCalc {
     uint256 constant private PHASE_OFFSET = 64;
 
+    /// @return the next round ID
+    // @dev if roundId is the latest round, return the same roundId to indicate that we can't go forward any more
     function next(AggregatorProxy proxy, uint256 roundId) public view returns (uint80)
     {
         (uint16 phaseId, uint64 aggregatorRoundId) = parseIds(roundId);
@@ -68,12 +18,13 @@ contract ChainlinkRoundIdCalc {
         }
         else if (phaseId < proxy.phaseId()) {
             phaseId++;
-            aggregatorRoundId = 1;
+            aggregatorRoundId = 1;  
         }
         return addPhase(phaseId, aggregatorRoundId);
     }
 
-    /// @dev if roundId is the first entry, return the same roundId to indicate that we can't go back any further
+    /// @return the previous round ID 
+    /// @dev if roundId is the first ever round, return the same roundId to indicate that we can't go back any further
     function prev(AggregatorProxy proxy, uint256 roundId) public view returns (uint80)
     {
         (uint16 phaseId, uint64 aggregatorRoundId) = parseIds(roundId);
@@ -88,11 +39,13 @@ contract ChainlinkRoundIdCalc {
         return addPhase(phaseId, aggregatorRoundId);
     }
     
+    /// @dev copied from chainlink aggregator contract
     function addPhase(uint16 _phase, uint64 _originalId) internal pure returns (uint80)
     {
         return uint80(uint256(_phase) << PHASE_OFFSET | _originalId);
     }
 
+    /// @dev copied from chainlink aggregator contract
     function parseIds(uint256 _roundId) internal pure returns (uint16, uint64)
     {
         uint16 phaseId = uint16(_roundId >> PHASE_OFFSET);
