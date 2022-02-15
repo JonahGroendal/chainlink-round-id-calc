@@ -1,0 +1,34 @@
+{
+  "name": "chainlink-round-id-calc",
+  "version": "1.0.0",
+  "description": "Calculate chainlink round IDs for consuming historical data on-chain.",
+  "main": "index.js",
+  "scripts": {
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JonahGroendal/chainlink-round-id-calc.git"
+  },
+  "keywords": [
+    "chainlink",
+    "round",
+    "ID",
+    "roundId",
+    "calc",
+    "calculator",
+    "historical",
+    "price",
+    "feed",
+    "solidity"
+  ],
+  "author": "Jonah Groendal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JonahGroendal/chainlink-round-id-calc/issues"
+  },
+  "homepage": "https://github.com/JonahGroendal/chainlink-round-id-calc#readme",
+  "dependencies": {
+    "truffle": "^5.4.33"
+  }
+}
