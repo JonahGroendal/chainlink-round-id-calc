@@ -4,7 +4,10 @@
   "description": "Calculate chainlink round IDs for consuming historical data on-chain.",
   "main": "index.js",
   "scripts": {
-    "test": "truffle test"
+    "test": "truffle test --network rinkeby",
+    "test-offline": "truffle test",
+    "compile": "truffle compile",
+    "migrate": "truffle migrate --reset --network rinkeby"
   },
   "repository": {
     "type": "git",
@@ -28,7 +31,8 @@
     "url": "https://github.com/JonahGroendal/chainlink-round-id-calc/issues"
   },
   "homepage": "https://github.com/JonahGroendal/chainlink-round-id-calc#readme",
-  "dependencies": {
-    "truffle": "^5.4.33"
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^2.0.3",
+    "truffle": "^5.5.2"
   }
 }

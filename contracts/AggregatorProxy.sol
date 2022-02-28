@@ -46,11 +46,10 @@ interface AggregatorV3Interface {
 
 interface AggregatorV2V3Interface is AggregatorInterface, AggregatorV3Interface
 {
-  function latestRound() external view returns (uint256);
 }
 
 
-interface AggregatorProxy {
+interface AggregatorProxy is AggregatorV2V3Interface {
     function phaseId() external view returns (uint16);
     function phaseAggregators(uint16 phaseId) external view returns (AggregatorV2V3Interface);
 }

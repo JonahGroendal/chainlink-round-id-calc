@@ -240,7 +240,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"int256\",\"name\":\"current\",\"type\":\"int256\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"roundId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"updatedAt\",\"type\":\"uint256\"}],\"name\":\"AnswerUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"roundId\",\"type\":\"uint256\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"startedBy\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"startedAt\",\"type\":\"uint256\"}],\"name\":\"NewRound\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"decimals\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"description\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"roundId\",\"type\":\"uint256\"}],\"name\":\"getAnswer\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint80\",\"name\":\"_roundId\",\"type\":\"uint80\"}],\"name\":\"getRoundData\",\"outputs\":[{\"internalType\":\"uint80\",\"name\":\"roundId\",\"type\":\"uint80\"},{\"internalType\":\"int256\",\"name\":\"answer\",\"type\":\"int256\"},{\"internalType\":\"uint256\",\"name\":\"startedAt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"updatedAt\",\"type\":\"uint256\"},{\"internalType\":\"uint80\",\"name\":\"answeredInRound\",\"type\":\"uint80\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"roundId\",\"type\":\"uint256\"}],\"name\":\"getTimestamp\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"latestAnswer\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"latestRound\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"latestRoundData\",\"outputs\":[{\"internalType\":\"uint80\",\"name\":\"roundId\",\"type\":\"uint80\"},{\"internalType\":\"int256\",\"name\":\"answer\",\"type\":\"int256\"},{\"internalType\":\"uint256\",\"name\":\"startedAt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"updatedAt\",\"type\":\"uint256\"},{\"internalType\":\"uint80\",\"name\":\"answeredInRound\",\"type\":\"uint80\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"latestTimestamp\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"version\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/AggregatorProxy.sol\":\"AggregatorV2V3Interface\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/AggregatorProxy.sol\":{\"keccak256\":\"0x32c8a922e6e120ec719a15802b38cc59ea0bf27c861b2c3557d0f60a5cc6f484\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://15fb57385cee3fc886e1ee8cb53f7c7f62565b183311517bd0765c83a8faa6a4\",\"dweb:/ipfs/QmW5GE3m6mp7XaEjdm7C2SYMWaQPESnEvCdqp6VTjVPHSx\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"int256\",\"name\":\"current\",\"type\":\"int256\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"roundId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"updatedAt\",\"type\":\"uint256\"}],\"name\":\"AnswerUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"roundId\",\"type\":\"uint256\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"startedBy\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"startedAt\",\"type\":\"uint256\"}],\"name\":\"NewRound\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"decimals\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"description\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"roundId\",\"type\":\"uint256\"}],\"name\":\"getAnswer\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint80\",\"name\":\"_roundId\",\"type\":\"uint80\"}],\"name\":\"getRoundData\",\"outputs\":[{\"internalType\":\"uint80\",\"name\":\"roundId\",\"type\":\"uint80\"},{\"internalType\":\"int256\",\"name\":\"answer\",\"type\":\"int256\"},{\"internalType\":\"uint256\",\"name\":\"startedAt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"updatedAt\",\"type\":\"uint256\"},{\"internalType\":\"uint80\",\"name\":\"answeredInRound\",\"type\":\"uint80\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"roundId\",\"type\":\"uint256\"}],\"name\":\"getTimestamp\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"latestAnswer\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"latestRound\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"latestRoundData\",\"outputs\":[{\"internalType\":\"uint80\",\"name\":\"roundId\",\"type\":\"uint80\"},{\"internalType\":\"int256\",\"name\":\"answer\",\"type\":\"int256\"},{\"internalType\":\"uint256\",\"name\":\"startedAt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"updatedAt\",\"type\":\"uint256\"},{\"internalType\":\"uint80\",\"name\":\"answeredInRound\",\"type\":\"uint80\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"latestTimestamp\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"version\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/AggregatorProxy.sol\":\"AggregatorV2V3Interface\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/AggregatorProxy.sol\":{\"keccak256\":\"0x137458f44990085d231709b88c2292b587927192782f6ec8e3afe5b850db9b7a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://10f2a193427d842a78c1c3f348b7f7c1236fdc510605fd94dfb5ec09b2913db7\",\"dweb:/ipfs/QmPBMFAB1FBmx2V5pcFQFWxmCW9UUH5CzkU5a1x4ifGEst\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -248,7 +248,7 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.7;\n\ninterface AggregatorInterface {\n  function latestAnswer() external view returns (int256);\n  function latestTimestamp() external view returns (uint256);\n  function latestRound() external view returns (uint256);\n  function getAnswer(uint256 roundId) external view returns (int256);\n  function getTimestamp(uint256 roundId) external view returns (uint256);\n\n  event AnswerUpdated(int256 indexed current, uint256 indexed roundId, uint256 updatedAt);\n  event NewRound(uint256 indexed roundId, address indexed startedBy, uint256 startedAt);\n}\n\ninterface AggregatorV3Interface {\n\n  function decimals() external view returns (uint8);\n  function description() external view returns (string memory);\n  function version() external view returns (uint256);\n\n  // getRoundData and latestRoundData should both raise \"No data present\"\n  // if they do not have data to report, instead of returning unset values\n  // which could be misinterpreted as actual reported values.\n  function getRoundData(uint80 _roundId)\n    external\n    view\n    returns (\n      uint80 roundId,\n      int256 answer,\n      uint256 startedAt,\n      uint256 updatedAt,\n      uint80 answeredInRound\n    );\n  function latestRoundData()\n    external\n    view\n    returns (\n      uint80 roundId,\n      int256 answer,\n      uint256 startedAt,\n      uint256 updatedAt,\n      uint80 answeredInRound\n    );\n\n}\n\ninterface AggregatorV2V3Interface is AggregatorInterface, AggregatorV3Interface\n{\n  function latestRound() external view returns (uint256);\n}\n\n\ninterface AggregatorProxy {\n    function phaseId() external view returns (uint16);\n    function phaseAggregators(uint16 phaseId) external view returns (AggregatorV2V3Interface);\n}\n",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.7;\n\ninterface AggregatorInterface {\n  function latestAnswer() external view returns (int256);\n  function latestTimestamp() external view returns (uint256);\n  function latestRound() external view returns (uint256);\n  function getAnswer(uint256 roundId) external view returns (int256);\n  function getTimestamp(uint256 roundId) external view returns (uint256);\n\n  event AnswerUpdated(int256 indexed current, uint256 indexed roundId, uint256 updatedAt);\n  event NewRound(uint256 indexed roundId, address indexed startedBy, uint256 startedAt);\n}\n\ninterface AggregatorV3Interface {\n\n  function decimals() external view returns (uint8);\n  function description() external view returns (string memory);\n  function version() external view returns (uint256);\n\n  // getRoundData and latestRoundData should both raise \"No data present\"\n  // if they do not have data to report, instead of returning unset values\n  // which could be misinterpreted as actual reported values.\n  function getRoundData(uint80 _roundId)\n    external\n    view\n    returns (\n      uint80 roundId,\n      int256 answer,\n      uint256 startedAt,\n      uint256 updatedAt,\n      uint80 answeredInRound\n    );\n  function latestRoundData()\n    external\n    view\n    returns (\n      uint80 roundId,\n      int256 answer,\n      uint256 startedAt,\n      uint256 updatedAt,\n      uint80 answeredInRound\n    );\n\n}\n\ninterface AggregatorV2V3Interface is AggregatorInterface, AggregatorV3Interface\n{\n  function latestRound() external view returns (uint256);\n}\n\n\ninterface AggregatorProxy is AggregatorV2V3Interface {\n    function phaseId() external view returns (uint16);\n    function phaseAggregators(uint16 phaseId) external view returns (AggregatorV2V3Interface);\n}\n",
   "sourcePath": "/home/jonah/chainlink-round-id-calc/contracts/AggregatorProxy.sol",
   "ast": {
     "absolutePath": "project:/contracts/AggregatorProxy.sol",
@@ -257,7 +257,7 @@
         47
       ],
       "AggregatorProxy": [
-        115
+        117
       ],
       "AggregatorV2V3Interface": [
         101
@@ -266,7 +266,7 @@
         91
       ]
     },
-    "id": 116,
+    "id": 118,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
@@ -827,7 +827,7 @@
             "src": "505:86:0"
           }
         ],
-        "scope": 116,
+        "scope": 118,
         "src": "57:536:0",
         "usedErrors": []
       },
@@ -1366,7 +1366,7 @@
             "visibility": "external"
           }
         ],
-        "scope": 116,
+        "scope": 118,
         "src": "595:820:0",
         "usedErrors": []
       },
@@ -1471,20 +1471,36 @@
             "visibility": "external"
           }
         ],
-        "scope": 116,
+        "scope": 118,
         "src": "1417:141:0",
         "usedErrors": []
       },
       {
         "abstract": false,
-        "baseContracts": [],
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 102,
+              "name": "AggregatorV2V3Interface",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 101,
+              "src": "1590:23:0"
+            },
+            "id": 103,
+            "nodeType": "InheritanceSpecifier",
+            "src": "1590:23:0"
+          }
+        ],
         "canonicalName": "AggregatorProxy",
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 115,
+        "id": 117,
         "linearizedBaseContracts": [
-          115
+          117,
+          101,
+          91,
+          47
         ],
         "name": "AggregatorProxy",
         "nameLocation": "1571:15:0",
@@ -1492,32 +1508,32 @@
         "nodes": [
           {
             "functionSelector": "58303b10",
-            "id": 106,
+            "id": 108,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "phaseId",
-            "nameLocation": "1602:7:0",
+            "nameLocation": "1629:7:0",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 102,
+              "id": 104,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1609:2:0"
+              "src": "1636:2:0"
             },
             "returnParameters": {
-              "id": 105,
+              "id": 107,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 104,
+                  "id": 106,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 106,
-                  "src": "1635:6:0",
+                  "scope": 108,
+                  "src": "1662:6:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1525,10 +1541,10 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 103,
+                    "id": 105,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1635:6:0",
+                    "src": "1662:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint16",
                       "typeString": "uint16"
@@ -1537,36 +1553,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1634:8:0"
+              "src": "1661:8:0"
             },
-            "scope": 115,
-            "src": "1593:50:0",
+            "scope": 117,
+            "src": "1620:50:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "c1597304",
-            "id": 114,
+            "id": 116,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "phaseAggregators",
-            "nameLocation": "1657:16:0",
+            "nameLocation": "1684:16:0",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 109,
+              "id": 111,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 108,
+                  "id": 110,
                   "mutability": "mutable",
                   "name": "phaseId",
-                  "nameLocation": "1681:7:0",
+                  "nameLocation": "1708:7:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 114,
-                  "src": "1674:14:0",
+                  "scope": 116,
+                  "src": "1701:14:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1574,10 +1590,10 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 107,
+                    "id": 109,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1674:6:0",
+                    "src": "1701:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint16",
                       "typeString": "uint16"
@@ -1586,21 +1602,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1673:16:0"
+              "src": "1700:16:0"
             },
             "returnParameters": {
-              "id": 113,
+              "id": 115,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 112,
+                  "id": 114,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 114,
-                  "src": "1713:23:0",
+                  "scope": 116,
+                  "src": "1740:23:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1608,17 +1624,17 @@
                     "typeString": "contract AggregatorV2V3Interface"
                   },
                   "typeName": {
-                    "id": 111,
+                    "id": 113,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 110,
+                      "id": 112,
                       "name": "AggregatorV2V3Interface",
                       "nodeType": "IdentifierPath",
                       "referencedDeclaration": 101,
-                      "src": "1713:23:0"
+                      "src": "1740:23:0"
                     },
                     "referencedDeclaration": 101,
-                    "src": "1713:23:0",
+                    "src": "1740:23:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_AggregatorV2V3Interface_$101",
                       "typeString": "contract AggregatorV2V3Interface"
@@ -1627,21 +1643,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1712:25:0"
+              "src": "1739:25:0"
             },
-            "scope": 115,
-            "src": "1648:90:0",
+            "scope": 117,
+            "src": "1675:90:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 116,
-        "src": "1561:179:0",
+        "scope": 118,
+        "src": "1561:206:0",
         "usedErrors": []
       }
     ],
-    "src": "32:1709:0"
+    "src": "32:1736:0"
   },
   "legacyAST": {
     "absolutePath": "project:/contracts/AggregatorProxy.sol",
@@ -1650,7 +1666,7 @@
         47
       ],
       "AggregatorProxy": [
-        115
+        117
       ],
       "AggregatorV2V3Interface": [
         101
@@ -1659,7 +1675,7 @@
         91
       ]
     },
-    "id": 116,
+    "id": 118,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
@@ -2220,7 +2236,7 @@
             "src": "505:86:0"
           }
         ],
-        "scope": 116,
+        "scope": 118,
         "src": "57:536:0",
         "usedErrors": []
       },
@@ -2759,7 +2775,7 @@
             "visibility": "external"
           }
         ],
-        "scope": 116,
+        "scope": 118,
         "src": "595:820:0",
         "usedErrors": []
       },
@@ -2864,20 +2880,36 @@
             "visibility": "external"
           }
         ],
-        "scope": 116,
+        "scope": 118,
         "src": "1417:141:0",
         "usedErrors": []
       },
       {
         "abstract": false,
-        "baseContracts": [],
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 102,
+              "name": "AggregatorV2V3Interface",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 101,
+              "src": "1590:23:0"
+            },
+            "id": 103,
+            "nodeType": "InheritanceSpecifier",
+            "src": "1590:23:0"
+          }
+        ],
         "canonicalName": "AggregatorProxy",
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 115,
+        "id": 117,
         "linearizedBaseContracts": [
-          115
+          117,
+          101,
+          91,
+          47
         ],
         "name": "AggregatorProxy",
         "nameLocation": "1571:15:0",
@@ -2885,32 +2917,32 @@
         "nodes": [
           {
             "functionSelector": "58303b10",
-            "id": 106,
+            "id": 108,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "phaseId",
-            "nameLocation": "1602:7:0",
+            "nameLocation": "1629:7:0",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 102,
+              "id": 104,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1609:2:0"
+              "src": "1636:2:0"
             },
             "returnParameters": {
-              "id": 105,
+              "id": 107,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 104,
+                  "id": 106,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 106,
-                  "src": "1635:6:0",
+                  "scope": 108,
+                  "src": "1662:6:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2918,10 +2950,10 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 103,
+                    "id": 105,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1635:6:0",
+                    "src": "1662:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint16",
                       "typeString": "uint16"
@@ -2930,36 +2962,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1634:8:0"
+              "src": "1661:8:0"
             },
-            "scope": 115,
-            "src": "1593:50:0",
+            "scope": 117,
+            "src": "1620:50:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "c1597304",
-            "id": 114,
+            "id": 116,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "phaseAggregators",
-            "nameLocation": "1657:16:0",
+            "nameLocation": "1684:16:0",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 109,
+              "id": 111,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 108,
+                  "id": 110,
                   "mutability": "mutable",
                   "name": "phaseId",
-                  "nameLocation": "1681:7:0",
+                  "nameLocation": "1708:7:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 114,
-                  "src": "1674:14:0",
+                  "scope": 116,
+                  "src": "1701:14:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2967,10 +2999,10 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 107,
+                    "id": 109,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1674:6:0",
+                    "src": "1701:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint16",
                       "typeString": "uint16"
@@ -2979,21 +3011,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1673:16:0"
+              "src": "1700:16:0"
             },
             "returnParameters": {
-              "id": 113,
+              "id": 115,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 112,
+                  "id": 114,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 114,
-                  "src": "1713:23:0",
+                  "scope": 116,
+                  "src": "1740:23:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3001,17 +3033,17 @@
                     "typeString": "contract AggregatorV2V3Interface"
                   },
                   "typeName": {
-                    "id": 111,
+                    "id": 113,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 110,
+                      "id": 112,
                       "name": "AggregatorV2V3Interface",
                       "nodeType": "IdentifierPath",
                       "referencedDeclaration": 101,
-                      "src": "1713:23:0"
+                      "src": "1740:23:0"
                     },
                     "referencedDeclaration": 101,
-                    "src": "1713:23:0",
+                    "src": "1740:23:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_AggregatorV2V3Interface_$101",
                       "typeString": "contract AggregatorV2V3Interface"
@@ -3020,29 +3052,29 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1712:25:0"
+              "src": "1739:25:0"
             },
-            "scope": 115,
-            "src": "1648:90:0",
+            "scope": 117,
+            "src": "1675:90:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 116,
-        "src": "1561:179:0",
+        "scope": 118,
+        "src": "1561:206:0",
         "usedErrors": []
       }
     ],
-    "src": "32:1709:0"
+    "src": "32:1736:0"
   },
   "compiler": {
     "name": "solc",
     "version": "0.8.11+commit.d7f03943.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.4",
-  "updatedAt": "2022-02-15T05:13:45.419Z",
+  "schemaVersion": "3.4.5",
+  "updatedAt": "2022-02-28T01:57:29.361Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

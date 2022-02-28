@@ -1,0 +1,21 @@
+pragma solidity ^0.8.7;
+
+import "truffle/Assert.sol";
+import "truffle/DeployedAddresses.sol";
+import "../contracts/ChainlinkRoundIdCalc.sol";
+import "../contracts/AggregatorProxy.sol";
+
+contract TestChainlinkRoundIdCalc {
+    //using ChainlinkRoundIdCalc for AggregatorProxy;
+
+    // AggregatorProxy public ethUsd;
+
+    // constructor() {
+    //     ethUsd = AggregatorProxy(0x8A753747A1Fa494EC906cE90E9f37563A8AF630e);
+    // }
+
+    function testFirstThing() public {
+        //AggregatorProxy ethUsd = AggregatorProxy(0x8A753747A1Fa494EC906cE90E9f37563A8AF630e);
+        Assert.equal(uint(0), uint(1), "should fali");
+    }
+}

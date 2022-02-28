@@ -8,24 +8,23 @@ library ChainlinkRoundIdCalc {
 
     /// @return the next round ID
     // @dev if roundId is the latest round, return the same roundId to indicate that we can't go forward any more
-    function next(AggregatorProxy proxy, uint256 roundId) public view returns (uint80)
+    function next(AggregatorProxy proxy, uint256 roundId) internal view returns (uint80)
     {
         (uint16 phaseId, uint64 aggregatorRoundId) = parseIds(roundId);
-        uint maxAggregatorRoundId = proxy.phaseAggregators(phaseId).latestRound();
 
-        if (aggregatorRoundId < maxAggregatorRoundId) {
+        if (proxy.getAnswer(addPhase(phaseId, aggregatorRoundId+1)) != 0) {
             aggregatorRoundId++;
         }
         else if (phaseId < proxy.phaseId()) {
             phaseId++;
-            aggregatorRoundId = 1;  
+            aggregatorRoundId = 1;
         }
         return addPhase(phaseId, aggregatorRoundId);
     }
 
     /// @return the previous round ID 
     /// @dev if roundId is the first ever round, return the same roundId to indicate that we can't go back any further
-    function prev(AggregatorProxy proxy, uint256 roundId) public view returns (uint80)
+    function prev(AggregatorProxy proxy, uint256 roundId) internal view returns (uint80)
     {
         (uint16 phaseId, uint64 aggregatorRoundId) = parseIds(roundId);
 
@@ -34,6 +33,8 @@ library ChainlinkRoundIdCalc {
         }
         else if (phaseId > 1) {
             phaseId--;
+            // access to latestRound() is restricted, making this library pretty much useless
+            // there isn't a good work around as far as I can tell
             aggregatorRoundId = uint64(proxy.phaseAggregators(phaseId).latestRound());
         }
         return addPhase(phaseId, aggregatorRoundId);
